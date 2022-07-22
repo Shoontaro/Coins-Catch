@@ -563,8 +563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -945.33325}
-  m_SizeDelta: {x: 650, y: 650}
+  m_AnchoredPosition: {x: 683, y: -1541}
+  m_SizeDelta: {x: 507.2, y: 555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538838632
 MonoBehaviour:
@@ -966,8 +966,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -287.33325}
-  m_SizeDelta: {x: 650, y: 650}
+  m_AnchoredPosition: {x: -634.1, y: -1516.9}
+  m_SizeDelta: {x: 443.8, y: 396.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266365676
 MonoBehaviour:
@@ -2058,6 +2058,10 @@ PrefabInstance:
     - target: {fileID: 758028666269572690, guid: 89013e4bd3433e448bd2adc64341bc9c, type: 3}
       propertyPath: m_Name
       value: AudioSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530469809763841064, guid: 89013e4bd3433e448bd2adc64341bc9c, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7530469809763841064, guid: 89013e4bd3433e448bd2adc64341bc9c, type: 3}
       propertyPath: m_Volume
