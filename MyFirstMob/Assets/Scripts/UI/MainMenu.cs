@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayPressed()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void ExitPressed()
