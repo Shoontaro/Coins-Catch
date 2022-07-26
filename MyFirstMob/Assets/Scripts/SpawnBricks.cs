@@ -5,12 +5,10 @@ public class SpawnBricks : MonoBehaviour
 {
 
     public GameObject bomb;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         StartCoroutine(Spawn());
-
     }
 
     IEnumerator Spawn()
@@ -22,5 +20,4 @@ public class SpawnBricks : MonoBehaviour
             //yield return new WaitForSeconds(Random.Range(1.5f, 3f));
         }
     }
-   
 }
