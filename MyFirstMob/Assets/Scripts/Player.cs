@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -13,8 +12,6 @@ public class Player : MonoBehaviour
     public GameObject heart3;
     public static int i = 0;
     public static int score = 0;
-
-
 
     void Awake()
     {
@@ -46,7 +43,6 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.tag == "Coin")
         {
-
             soundCoin.Play();
             score++;
 
@@ -56,8 +52,6 @@ public class Player : MonoBehaviour
             }
 
         }
-
-
 
         Destroy(other.gameObject);
     }
