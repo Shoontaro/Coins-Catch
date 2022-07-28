@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpawnCoin : MonoBehaviour
 {
     public GameObject coin;
+    public float time = 1.5f;
     //public float CoinRandom;
     void Start()
     {
@@ -16,7 +17,7 @@ public class SpawnCoin : MonoBehaviour
         {
 
             Instantiate(coin, new Vector2(Random.Range(-2f, 2f), 5.9f), Quaternion.identity);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(time);
             //yield return new WaitForSeconds(Random.Range(1f, 1.8f));
         }
     }
