@@ -14,8 +14,7 @@ public class Player : MonoBehaviour
     public static int i = 0;
     public static int score = 0;
     public static int scoreTarget = 0;
-
-
+   
     void Awake()
     {
         lose = false;
@@ -44,11 +43,15 @@ public class Player : MonoBehaviour
                 restart.SetActive(lose);
                 exit.SetActive(lose);
             }
+
+            if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
+            {
+                Time.timeScale = 0f; //для проверки работает ли
+            }
         }
 
         if (other.gameObject.tag == "Coin" || other.gameObject.tag == "Target")
         {
-            Debug.Log("000000000000000000");
             soundCoin.Play();
 
             switch (other.gameObject.tag)
@@ -77,6 +80,7 @@ public class Player : MonoBehaviour
                     }
                     break;
                 case "Level3":
+                    
                     break;
                 case "Level4":
                     break;
