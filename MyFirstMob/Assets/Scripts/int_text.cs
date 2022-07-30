@@ -5,12 +5,12 @@ public class int_text : MonoBehaviour
 {
     public Text MyText;
 
-    void Start()
+  public  void Start()
     {
         MyText.text = $"X 0";
     }
 
-    void Update()
+    public void Update()
     {
         MyText.text = $"X {Player.score}";
     }
