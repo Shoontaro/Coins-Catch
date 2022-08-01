@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public static bool lose = false;
-    public GameObject restart;
-    public GameObject exit;
+    // public GameObject restart;
+    // public GameObject exit;
+    public GameObject panel;
+   // public GameObject panelWin;
     public AudioSource soundCoin;
     public AudioSource soundBrick;
     public GameObject heart1;
@@ -14,22 +16,21 @@ public class Player : MonoBehaviour
     public static int i = 0;
     public static int score = 0;
     public static int scoreTarget = 0;
-   
+
     void Awake()
     {
         lose = false;
         i = 0;
         score = 0;
         scoreTarget = 0;
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.tag == "Brick")
         {
             soundBrick.Play();
+            Debug.Log("sound brick");
             i++;
 
             FallDown.falls = 0f;
@@ -40,8 +41,9 @@ public class Player : MonoBehaviour
             {
                 heart3.SetActive(lose);
                 lose = true;
-                restart.SetActive(lose);
-                exit.SetActive(lose);
+                // restart.SetActive(lose);
+                // exit.SetActive(lose);
+                panel.SetActive(lose);
             }
 
             if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
@@ -77,10 +79,11 @@ public class Player : MonoBehaviour
                     if (score >= 5 && scoreTarget == 8)
                     {
                         Time.timeScale = 0f; //для проверки работает ли
+                       
                     }
                     break;
                 case "Level3":
-                    
+
                     break;
                 case "Level4":
                     break;
@@ -91,5 +94,4 @@ public class Player : MonoBehaviour
         }
         Destroy(other.gameObject);
     }
-
 }
