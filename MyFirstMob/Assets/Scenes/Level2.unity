@@ -2249,7 +2249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1614358863}
-  panelWin: {fileID: 2731849663671868832, guid: c572da849e0f181489e85c5fbcf763db, type: 3}
   soundCoin: {fileID: 744274247}
   soundBrick: {fileID: 816743343}
   heart1: {fileID: 1159631225}
