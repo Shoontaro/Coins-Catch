@@ -8,7 +8,7 @@ public class FallDown : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < -6f)
+        if (transform.position.y < -6f || Player.lose)
         {
             Destroy(gameObject);
         }

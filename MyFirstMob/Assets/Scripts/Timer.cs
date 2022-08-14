@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public static float timeStart = 45f;
+    public static float timeStart = 15f;
     public Text timerText;
 
     void Start()
@@ -13,7 +13,10 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        timeStart -= Time.deltaTime;
-        timerText.text = Mathf.Round(timeStart).ToString();
+        if (timeStart > 0 && !Player.lose)
+        {
+            timeStart -= Time.deltaTime;
+            timerText.text = Mathf.Round(timeStart).ToString();
+        }
     }
 }
