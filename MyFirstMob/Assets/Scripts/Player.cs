@@ -25,12 +25,21 @@ public class Player : MonoBehaviour
         scoreTarget = 0;
     }
 
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
+        {
+           
+            lose = true;
+            panel.SetActive(lose);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Brick")
+        if (other.gameObject.tag == "Brick" || other.gameObject.tag == "Machette" || other.gameObject.tag == "Sword" || other.gameObject.tag == "Bomb")
         {
             soundBrick.Play();
-            Debug.Log("sound brick");
             i++;
 
             FallDown.falls = 0f;
@@ -44,12 +53,13 @@ public class Player : MonoBehaviour
                 // restart.SetActive(lose);
                 // exit.SetActive(lose);
                 panel.SetActive(lose);
+                //ex.SetActive(lose);
             }
 
-            if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
+           /* if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
             {
                 Time.timeScale = 0f; //для проверки работает ли
-            }
+            }*/
         }
 
         if (other.gameObject.tag == "Coin" || other.gameObject.tag == "Target")
@@ -78,8 +88,9 @@ public class Player : MonoBehaviour
                 case "Level2":
                     if (score >= 5 && scoreTarget == 8)
                     {
-                        Time.timeScale = 0f; //для проверки работает ли
-                       
+                       // Time.timeScale = 0f; //для проверки работает ли
+                        lose = true;
+                        panel.SetActive(lose);
                     }
                     break;
                 case "Level3":
@@ -87,8 +98,7 @@ public class Player : MonoBehaviour
                     break;
                 case "Level4":
                     break;
-                case "Level5":
-                    break;
+               
             }
 
         }
