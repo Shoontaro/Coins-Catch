@@ -6,7 +6,7 @@ public class MovePlayer : MonoBehaviour
     public Transform player;
 
     [SerializeField]
-    private float speed = 10f;
+    private float speed = 15f;
     void OnMouseDrag()
     {
         if (!Player.lose)

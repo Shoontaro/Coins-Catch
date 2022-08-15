@@ -14,5 +14,6 @@ public class AudioController : MonoBehaviour
     private void Update()
     {
         _audio.volume = PlayerPrefs.GetFloat("volumeValue");
+
     }
 }

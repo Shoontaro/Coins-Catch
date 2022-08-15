@@ -7,6 +7,9 @@ TagManager:
   - Brick
   - Coin
   - Target
+  - Sword
+  - Bomb
+  - Machette
   layers:
   - Default
   - TransparentFX

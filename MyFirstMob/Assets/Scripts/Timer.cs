@@ -13,7 +13,10 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        timeStart -= Time.deltaTime;
-        timerText.text = Mathf.Round(timeStart).ToString();
+        if (timeStart > 0 && !Player.lose)
+        {
+            timeStart -= Time.deltaTime;
+            timerText.text = Mathf.Round(timeStart).ToString();
+        }
     }
 }

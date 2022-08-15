@@ -18,8 +18,11 @@ public class SpawnBricks : MonoBehaviour
     {
         while (!Player.lose)
         {
-            Instantiate(bomb, new Vector2(Random.Range(start, end), 5.9f), Quaternion.identity);
             yield return new WaitForSeconds(seconds);
+            if (!Player.lose)
+            {
+                Instantiate(bomb, new Vector2(Random.Range(start, end), 5.9f), Quaternion.identity);
+            }
             //yield return new WaitForSeconds(Random.Range(1.5f, 3f));
         }
     }

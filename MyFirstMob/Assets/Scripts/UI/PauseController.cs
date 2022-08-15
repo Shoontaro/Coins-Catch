@@ -13,7 +13,10 @@ public class PauseController : MonoBehaviour
         Time.timeScale = 1f;
 
         if (Player.lose)
+        {
+            Timer.timeStart = 45f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     public void LoadMainMenu()
