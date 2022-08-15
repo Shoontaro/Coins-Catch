@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // public GameObject restart;
     // public GameObject exit;
     public GameObject panel;
-   // public GameObject panelWin;
+    public GameObject panelWin;
     public AudioSource soundCoin;
     public AudioSource soundBrick;
     public GameObject heart1;
@@ -28,10 +28,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
-        {
-           
+        {         
             lose = true;
-            panel.SetActive(lose);
+            panelWin.SetActive(lose);
         }
     }
 

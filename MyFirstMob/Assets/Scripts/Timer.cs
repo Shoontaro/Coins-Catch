@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public static float timeStart = 15f;
+    public static float timeStart = 45f;
     public Text timerText;
 
     void Start()
