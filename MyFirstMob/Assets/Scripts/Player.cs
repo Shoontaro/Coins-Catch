@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Level1":
+                    PlayerPrefs.SetInt("Score", score);
                     if (score % 20 == 0)
                     {
                         FallDown.falls += 0.5f;
