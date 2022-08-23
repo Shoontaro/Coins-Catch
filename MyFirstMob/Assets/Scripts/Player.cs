@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     // public GameObject restart;
     // public GameObject exit;
     public GameObject panel;
-   // public GameObject panelWin;
+    public GameObject panelWin;
     public AudioSource soundCoin;
     public AudioSource soundBrick;
     public GameObject heart1;
@@ -28,9 +28,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
-        {
-           
+        {         
             lose = true;
+            panelWin.SetActive(lose);
             panel.SetActive(lose);
         }
     }
@@ -79,6 +79,7 @@ public class Player : MonoBehaviour
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Level1":
+                    PlayerPrefs.SetInt("Score", score);
                     if (score % 20 == 0)
                     {
                         FallDown.falls += 0.5f;
@@ -91,6 +92,7 @@ public class Player : MonoBehaviour
                        // Time.timeScale = 0f; //для проверки работает ли
                         lose = true;
                         panel.SetActive(lose);
+                        panelWin.SetActive(lose);
                     }
                     break;
                 case "Level3":
