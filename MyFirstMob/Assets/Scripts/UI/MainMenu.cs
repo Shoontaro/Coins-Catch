@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public int earnedMoney;
     public Text moneyTextmoney;
 
+    public int levels;
+
     private void Start()
     {
         PlayerPrefs.GetInt("Score");

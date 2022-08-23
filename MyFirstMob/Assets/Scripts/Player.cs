@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
             lose = true;
             panelWin.SetActive(lose);
             panel.SetActive(lose);
+            PlayerPrefs.SetInt("Score", 300);
         }
     }
 
@@ -93,6 +94,7 @@ public class Player : MonoBehaviour
                         lose = true;
                         panel.SetActive(lose);
                         panelWin.SetActive(lose);
+                        PlayerPrefs.SetInt("Score", 100);
                     }
                     break;
                 case "Level3":
