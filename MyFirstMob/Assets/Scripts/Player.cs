@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
         {         
             lose = true;
             panelWin.SetActive(lose);
+            panel.SetActive(lose);
         }
     }
 
@@ -91,6 +92,7 @@ public class Player : MonoBehaviour
                        // Time.timeScale = 0f; //для проверки работает ли
                         lose = true;
                         panel.SetActive(lose);
+                        panelWin.SetActive(lose);
                     }
                     break;
                 case "Level3":
