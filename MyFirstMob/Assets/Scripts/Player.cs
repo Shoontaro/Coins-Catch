@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     public static int i = 0;
     public static int score = 0;
     public static int scoreTarget = 0;
+    public string labelTextLevel2 = "You earned 300 coins";
 
     void Awake()
     {
@@ -28,11 +30,24 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
-        {         
+        {
             lose = true;
             panelWin.SetActive(lose);
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 300);
+        }
+    }
+
+    private void OnGUI()
+    {
+        GUIStyle myStyle = new GUIStyle(GUI.skin.GetStyle("label"));
+        myStyle.fontSize = 110;
+        myStyle.normal.textColor = Color.red;
+        myStyle.alignment = TextAnchor.MiddleCenter;
+
+        if (SceneManager.GetActiveScene().name == "Level2" && panel.activeSelf && lose == true)
+        {
+            GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel2, myStyle);
         }
     }
 
@@ -57,10 +72,10 @@ public class Player : MonoBehaviour
                 //ex.SetActive(lose);
             }
 
-           /* if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
-            {
-                Time.timeScale = 0f; //для проверки работает ли
-            }*/
+            /* if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
+             {
+                 Time.timeScale = 0f; //для проверки работает ли
+             }*/
         }
 
         if (other.gameObject.tag == "Coin" || other.gameObject.tag == "Target")
@@ -90,10 +105,12 @@ public class Player : MonoBehaviour
                 case "Level2":
                     if (score >= 5 && scoreTarget == 8)
                     {
-                       // Time.timeScale = 0f; //для проверки работает ли
+                        // Time.timeScale = 0f; //для проверки работает ли
                         lose = true;
                         panel.SetActive(lose);
-                        panelWin.SetActive(lose);
+                        //OnGUI();
+
+                        //panelWin.SetActive(lose);
                         PlayerPrefs.SetInt("Score", 100);
                     }
                     break;
@@ -102,7 +119,7 @@ public class Player : MonoBehaviour
                     break;
                 case "Level4":
                     break;
-               
+
             }
 
         }
