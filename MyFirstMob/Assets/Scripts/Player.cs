@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
     public static int i = 0;
     public static int score = 0;
     public static int scoreTarget = 0;
-    public string labelTextLevel2 = "You earned 300 coins";
+    public string labelTextLevel2 = "You earned 100 coins";
+    public string labelTextLevel3 = "You earned 300 coins";
 
     void Awake()
     {
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
         {
             lose = true;
-            panelWin.SetActive(lose);
+            //panelWin.SetActive(lose);
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 300);
         }
@@ -48,6 +49,11 @@ public class Player : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level2" && panel.activeSelf && lose == true)
         {
             GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel2, myStyle);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level3" && panel.activeSelf && Timer.timeStart < 1f)
+        {
+            GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel3, myStyle);
         }
     }
 
@@ -108,8 +114,6 @@ public class Player : MonoBehaviour
                         // Time.timeScale = 0f; //для проверки работает ли
                         lose = true;
                         panel.SetActive(lose);
-                        //OnGUI();
-
                         //panelWin.SetActive(lose);
                         PlayerPrefs.SetInt("Score", 100);
                     }
