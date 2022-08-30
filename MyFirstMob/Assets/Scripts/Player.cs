@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
@@ -15,17 +16,25 @@ public class Player : MonoBehaviour
     public GameObject heart2;
     public GameObject heart3;
     public static int i = 0;
+    public static int countLvl4 = 0;
     public static int score = 0;
     public static int scoreTarget = 0;
+    public static int bookscore = 0;
     public string labelTextLevel2 = "You earned 100 coins";
     public string labelTextLevel3 = "You earned 300 coins";
+    public static List<string> elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage"};
 
     void Awake()
     {
+        //List<string>  elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage" };
+        //Debug.Log(elem[0]);
+
         lose = false;
         i = 0;
         score = 0;
         scoreTarget = 0;
+        bookscore = 0;
+        countLvl4 = 0;
     }
 
     void Update()
@@ -37,6 +46,8 @@ public class Player : MonoBehaviour
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 300);
         }
+
+       
     }
 
     private void OnGUI()
@@ -84,7 +95,7 @@ public class Player : MonoBehaviour
              }*/
         }
 
-        if (other.gameObject.tag == "Coin" || other.gameObject.tag == "Target")
+        if (elem.IndexOf(other.gameObject.tag) != -1/*other.gameObject.tag == "Coin" || other.gameObject.tag == "Target"||other.gameObject.tag == "bottle"|| other.gameObject.tag == "rope" || other.gameObject.tag == "book" || other.gameObject.tag == "bandage"*/)
         {
             soundCoin.Play();
 
@@ -94,7 +105,12 @@ public class Player : MonoBehaviour
                     score++;
                     break;
                 case "Target":
+                    if(scoreTarget<8)
                     scoreTarget++;
+                    break;
+                case "book":
+                    if(bookscore<5)
+                    bookscore++;
                     break;
             }
 
@@ -109,7 +125,7 @@ public class Player : MonoBehaviour
 
                     break;
                 case "Level2":
-                    if (score >= 5 && scoreTarget == 8)
+                    if (bookscore >= 5 && scoreTarget == 8)
                     {
                         // Time.timeScale = 0f; //для проверки работает ли
                         lose = true;
@@ -122,6 +138,7 @@ public class Player : MonoBehaviour
 
                     break;
                 case "Level4":
+
                     break;
 
             }
