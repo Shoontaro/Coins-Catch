@@ -9,7 +9,7 @@ public class FallDown : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
-    //public GameObject panel;
+    public GameObject panel;
 
 
     void Update()
@@ -23,15 +23,15 @@ public class FallDown : MonoBehaviour
 
                 Player.i++;
                
-                    if (i >= 1) { heart1.SetActive(lose); }
-                    if (i >= 2) { heart2.SetActive(lose); }
-                    if (i >= 3)
+                    if (Player.i >= 1) { heart1.SetActive(Player.lose); }
+                    if (Player.i >= 2) { heart2.SetActive(Player.lose); }
+                    if (Player.i >= 3)
                     {
-                        heart3.SetActive(lose);
-                        lose = true;
-                        // restart.SetActive(lose);
-                        // exit.SetActive(lose);
-                        panel.SetActive(lose);
+                        heart3.SetActive(Player.lose);
+                        Player.lose = true;
+                    // restart.SetActive(lose);
+                    // exit.SetActive(lose);
+                       panel.SetActive(Player.lose);
                         //ex.SetActive(lose);
                     }
             }
