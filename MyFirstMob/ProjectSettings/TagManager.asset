@@ -10,6 +10,10 @@ TagManager:
   - Sword
   - Bomb
   - Machette
+  - bottle
+  - rope
+  - book
+  - bandage
   layers:
   - Default
   - TransparentFX
