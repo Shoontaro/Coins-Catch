@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public static int bookscore = 0;
     public string labelTextLevel2 = "You earned 100 coins";
     public string labelTextLevel3 = "You earned 300 coins";
-    public static List<string> elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage"};
+    public static List<string> elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage" };
 
     void Awake()
     {
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("Score", 300);
         }
 
-       
+
     }
 
     private void OnGUI()
@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
              }*/
         }
 
-        if (elem.IndexOf(other.gameObject.tag) != -1/*other.gameObject.tag == "Coin" || other.gameObject.tag == "Target"||other.gameObject.tag == "bottle"|| other.gameObject.tag == "rope" || other.gameObject.tag == "book" || other.gameObject.tag == "bandage"*/)
+        if (elem.IndexOf(other.gameObject.tag) != -1 /*other.gameObject.tag == "Coin" || other.gameObject.tag == "Target"||other.gameObject.tag == "bottle"|| other.gameObject.tag == "rope" || other.gameObject.tag == "book" || other.gameObject.tag == "bandage"*/)
         {
             soundCoin.Play();
 
@@ -105,12 +105,12 @@ public class Player : MonoBehaviour
                     score++;
                     break;
                 case "Target":
-                    if(scoreTarget<8)
-                    scoreTarget++;
+                    if (scoreTarget < 8)
+                        scoreTarget++;
                     break;
                 case "book":
-                    if(bookscore<5)
-                    bookscore++;
+                    if (bookscore < 5)
+                        bookscore++;
                     break;
             }
 
@@ -118,16 +118,22 @@ public class Player : MonoBehaviour
             {
                 case "Level1":
                     PlayerPrefs.SetInt("Score", score);
+
                     if (score % 20 == 0)
                     {
                         FallDown.falls += 0.5f;
                     }
 
+                    if (score == 300)
+                    {
+                        
+                    }
                     break;
                 case "Level2":
+
                     if (bookscore >= 5 && scoreTarget == 8)
                     {
-                        // Time.timeScale = 0f; //для проверки работает ли
+                        // Time.timeScale = 0f; 
                         lose = true;
                         panel.SetActive(lose);
                         //panelWin.SetActive(lose);
