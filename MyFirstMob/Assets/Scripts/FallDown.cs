@@ -5,11 +5,8 @@ public class FallDown : MonoBehaviour
 {
     [SerializeField]
     private float fallSpeed = 3f;
+    //[SerializeField] private Player playerScript;
     public static float falls;
-    public GameObject heart1;
-    public GameObject heart2;
-    public GameObject heart3;
-    public GameObject panel;
 
 
     void Update()
@@ -19,21 +16,19 @@ public class FallDown : MonoBehaviour
             Destroy(gameObject);
             if (!Player.lose && SceneManager.GetActiveScene().name == "Level4") {
 
-                Debug.Log("Уронил!");
+              
+                
 
                 Player.i++;
-               
-                    if (Player.i >= 1) { heart1.SetActive(Player.lose); }
-                    if (Player.i >= 2) { heart2.SetActive(Player.lose); }
-                    if (Player.i >= 3)
-                    {
-                        heart3.SetActive(Player.lose);
-                        Player.lose = true;
-                    // restart.SetActive(lose);
-                    // exit.SetActive(lose);
-                       panel.SetActive(Player.lose);
-                        //ex.SetActive(lose);
-                    }
+                Debug.Log("Уронил! lox");
+                //playerScript.LoseSome();
+                if (Player.i == 1) { GameObject.Find("H1lvl4").SetActive(Player.lose); }
+                if (Player.i == 2) { GameObject.Find("H2lvl4").SetActive(Player.lose); }
+                if (Player.i == 3)
+                {
+                    GameObject.Find("H3lvl4").SetActive(Player.lose);
+                    Player.lose = true;
+                }
             }
         }
 
