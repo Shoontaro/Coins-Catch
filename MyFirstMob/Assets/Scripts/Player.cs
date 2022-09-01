@@ -39,6 +39,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(SceneManager.GetActiveScene().name == "Level4" && lose == true){
+            panel.SetActive(lose);
+            PlayerPrefs.SetInt("Score", 1000);
+        }
+
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
         {
             lose = true;
@@ -46,9 +51,9 @@ public class Player : MonoBehaviour
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 300);
         }
-
-
     }
+
+
 
     private void OnGUI()
     {
@@ -65,6 +70,22 @@ public class Player : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level3" && panel.activeSelf && Timer.timeStart < 1f)
         {
             GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel3, myStyle);
+        }
+    }
+
+    public void LoseSome() {
+        i++;
+
+        if (i >= 1) { heart1.SetActive(lose); }
+        if (i >= 2) { heart2.SetActive(lose); }
+        if (i >= 3)
+        {
+            heart3.SetActive(lose);
+            lose = true;
+            // restart.SetActive(lose);
+            // exit.SetActive(lose);
+            panel.SetActive(lose);
+            //ex.SetActive(lose);
         }
     }
 
@@ -95,7 +116,7 @@ public class Player : MonoBehaviour
              }*/
         }
 
-        if (elem.IndexOf(other.gameObject.tag) != -1 /*other.gameObject.tag == "Coin" || other.gameObject.tag == "Target"||other.gameObject.tag == "bottle"|| other.gameObject.tag == "rope" || other.gameObject.tag == "book" || other.gameObject.tag == "bandage"*/)
+        if (elem.IndexOf(other.gameObject.tag) != -1)
         {
             soundCoin.Play();
 
@@ -144,6 +165,16 @@ public class Player : MonoBehaviour
 
                     break;
                 case "Level4":
+                    PlayerPrefs.SetInt("Score", score);
+
+                    if (other.gameObject.tag != "Coin") {
+                        score++;
+                    }
+
+                    if (score % 20 == 0)
+                    {
+                        FallDown.falls += 0.5f;
+                    }
 
                     break;
 
