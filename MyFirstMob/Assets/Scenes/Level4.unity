@@ -1304,9 +1304,12 @@ GameObject:
   - component: {fileID: 951676536}
   - component: {fileID: 951676540}
   - component: {fileID: 951676543}
+  - component: {fileID: 951676546}
+  - component: {fileID: 951676545}
+  - component: {fileID: 951676544}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1410,7 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8230921396141158678, guid: 884cc30e73113b04cbfc6f6997ce3937, type: 3}
-  time: 1.5
+  time: 4
 --- !u!114 &951676543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,6 +1428,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: {fileID: 343771192693363980, guid: 15a8862fc9b1b6445b65870c9b3a4b2d, type: 3}
   time: 2
+--- !u!114 &951676544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951676535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 8698961971447622578, guid: 425f2b9c450e103459141fa6e89bc900, type: 3}
+  time: 3.6
+--- !u!114 &951676545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951676535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 3116671776903848415, guid: c366dc67c3ae94a439fd7507a8e9df91, type: 3}
+  time: 2.8
+--- !u!114 &951676546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951676535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 8164519907020287873, guid: b452bfc82f825fd4eb85fa4fce63d930, type: 3}
+  time: 3
 --- !u!1 &1108149091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,7 +2131,7 @@ GameObject:
   - component: {fileID: 1614358865}
   - component: {fileID: 1614358867}
   m_Layer: 5
-  m_Name: PanelPause
+  m_Name: PanelPauselvl4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
