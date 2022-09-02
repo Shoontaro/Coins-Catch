@@ -11,6 +11,9 @@ public class MainMenu : MonoBehaviour
     public int earnedMoney;
     public Text moneyTextmoney;
 
+    public GameObject purchasePanel;
+    public GameObject button2Copy;
+
     //public Button level1;
     public Button level2;
     public Button level3;
@@ -26,7 +29,7 @@ public class MainMenu : MonoBehaviour
         level3.interactable = false;
         level4.interactable = false;
 
-        switch(levelComplete)
+        switch (levelComplete)
         {
             case 2:
                 level2.interactable = true;
@@ -62,6 +65,18 @@ public class MainMenu : MonoBehaviour
         //    levelComplete = 2;
         //    PlayerPrefs.SetInt("LevelComplete", levelComplete);
         //}
+    }
+
+    public void SetActivePurchasePanel()
+    {
+        purchasePanel.SetActive(true);
+    }
+
+    public void PressBuy2()
+    {
+        Destroy(button2Copy);
+        level2.interactable = true;
+        purchasePanel.SetActive(false); ;
     }
     public void Level1Pressed()
     {
@@ -119,5 +134,5 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(level);
     }
 
- 
+
 }
