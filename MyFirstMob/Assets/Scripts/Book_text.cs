@@ -14,6 +14,7 @@ public class Book_text : MonoBehaviour
     public void Update()
     {
         MyText.text = $"X {Player.bookscore}/5";
+
         if (Player.bookscore == 5)
         {
             MyText.color = new Color(0, 255, 0);
