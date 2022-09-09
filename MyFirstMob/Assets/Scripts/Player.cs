@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
@@ -26,9 +25,6 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        //List<string>  elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage" };
-        //Debug.Log(elem[0]);
-
         lose = false;
         i = 0;
         score = 0;
@@ -39,7 +35,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Level4" && lose == true){
+        if (SceneManager.GetActiveScene().name == "Level4" && lose == true)
+        {
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 1000);
         }
@@ -52,8 +49,6 @@ public class Player : MonoBehaviour
             PlayerPrefs.SetInt("Score", 300);
         }
     }
-
-
 
     private void OnGUI()
     {
@@ -73,7 +68,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void LoseSome() {
+    public void LoseSome()
+    {
         i++;
 
         if (i >= 1) { heart1.SetActive(lose); }
@@ -138,6 +134,7 @@ public class Player : MonoBehaviour
             switch (SceneManager.GetActiveScene().name)
             {
                 case "Level1":
+
                     PlayerPrefs.SetInt("Score", score);
 
                     if (score % 20 == 0)
@@ -147,9 +144,11 @@ public class Player : MonoBehaviour
 
                     if (score == 300)
                     {
-                        
+
                     }
+
                     break;
+
                 case "Level2":
 
                     if (bookscore >= 5 && scoreTarget == 8)
@@ -160,14 +159,19 @@ public class Player : MonoBehaviour
                         //panelWin.SetActive(lose);
                         PlayerPrefs.SetInt("Score", 100);
                     }
+
                     break;
+
                 case "Level3":
 
                     break;
+
                 case "Level4":
+
                     PlayerPrefs.SetInt("Score", score);
 
-                    if (other.gameObject.tag != "Coin") {
+                    if (other.gameObject.tag != "Coin")
+                    {
                         score++;
                     }
 
@@ -177,7 +181,6 @@ public class Player : MonoBehaviour
                     }
 
                     break;
-
             }
 
         }
