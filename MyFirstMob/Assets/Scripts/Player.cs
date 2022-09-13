@@ -5,8 +5,6 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour
 {
     public static bool lose = false;
-    // public GameObject restart;
-    // public GameObject exit;
     public GameObject panel;
     public GameObject panelWin;
     public AudioSource soundCoin;
@@ -52,7 +50,6 @@ public class Player : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
         {
             lose = true;
-            //panelWin.SetActive(lose);
             panel.SetActive(lose);
             PlayerPrefs.SetInt("Score", 300);
         }
@@ -86,10 +83,7 @@ public class Player : MonoBehaviour
         {
             heart3.SetActive(lose);
             lose = true;
-            // restart.SetActive(lose);
-            // exit.SetActive(lose);
             panel.SetActive(lose);
-            //ex.SetActive(lose);
         }
     }
 
@@ -129,11 +123,6 @@ public class Player : MonoBehaviour
                 panel.SetActive(lose);
                 //ex.SetActive(lose);
             }
-
-            /* if (SceneManager.GetActiveScene().name == "Level3" && i == 3 || Timer.timeStart == 0)
-             {
-                 Time.timeScale = 0f; //для проверки работает ли
-             }*/
         }
 
         if (elem.IndexOf(other.gameObject.tag) != -1)
