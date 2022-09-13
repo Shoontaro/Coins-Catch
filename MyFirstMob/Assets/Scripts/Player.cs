@@ -84,6 +84,7 @@ public class Player : MonoBehaviour
             heart3.SetActive(lose);
             lose = true;
             panel.SetActive(lose);
+            FallDown.falls = 0;
         }
     }
 
@@ -118,9 +119,11 @@ public class Player : MonoBehaviour
             {
                 heart3.SetActive(lose);
                 lose = true;
+                FallDown.falls = 0;
                 // restart.SetActive(lose);
                 // exit.SetActive(lose);
                 panel.SetActive(lose);
+
                 //ex.SetActive(lose);
             }
         }
@@ -195,7 +198,7 @@ public class Player : MonoBehaviour
                     {
                         lose = true;
                         panel.SetActive(lose);
-
+                        FallDown.falls = 0;
                         PlayerPrefs.SetInt("Score", score + 1000);
                     }
                     else
