@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+//using UnityEngine.SceneManagement;
 
 public class SpawnCoin : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class SpawnCoin : MonoBehaviour
 
     IEnumerator Spawn()
     {
+
+
         while (!Player.lose)
         {
 
@@ -23,5 +26,6 @@ public class SpawnCoin : MonoBehaviour
             }
             //yield return new WaitForSeconds(Random.Range(1f, 1.8f));
         }
+
     }
 }

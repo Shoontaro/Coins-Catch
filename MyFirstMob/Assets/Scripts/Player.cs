@@ -11,12 +11,20 @@ public class Player : MonoBehaviour
     public GameObject panelWin;
     public AudioSource soundCoin;
     public AudioSource soundBrick;
+    public AudioSource soundWind;
+    public AudioSource soundBag;
+    public AudioSource soundGlas;
+    public AudioSource soundBook;
+    public AudioSource soundMachette;
+    public AudioSource soundSword;
+    public AudioSource soundBomb;
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
     public static int i = 0;
     public static int countLvl4 = 0;
     public static int score = 0;
+    public static int itemScore = 0;
     public static int scoreTarget = 0;
     public static int bookscore = 0;
     public string labelTextLevel2 = "You earned 100 coins";
@@ -89,7 +97,23 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Brick" || other.gameObject.tag == "Machette" || other.gameObject.tag == "Sword" || other.gameObject.tag == "Bomb")
         {
-            soundBrick.Play();
+
+            switch (other.gameObject.tag) {
+                case "Brick":
+                    soundBrick.Play();
+                    break;
+                case "Machette":
+                    soundMachette.Play();
+                    break;
+                case "Sword":
+                    soundSword.Play();
+                    break;
+                case "Bomb":
+                    soundBomb.Play();
+                    break;
+               
+            }
+            
             i++;
 
             FallDown.falls = 0f;
@@ -114,20 +138,30 @@ public class Player : MonoBehaviour
 
         if (elem.IndexOf(other.gameObject.tag) != -1)
         {
-            soundCoin.Play();
+           
 
             switch (other.gameObject.tag)
             {
                 case "Coin":
                     score++;
+                    soundCoin.Play();
                     break;
                 case "Target":
+                    soundWind.Play();
                     if (scoreTarget < 8)
                         scoreTarget++;
                     break;
                 case "book":
+                    soundBook.Play();
                     if (bookscore < 5)
                         bookscore++;
+                    break;
+                case "bottle":
+                    soundGlas.Play();
+                    break;
+                case "rope":
+                case "bandage":
+                    soundBag.Play();
                     break;
             }
 
@@ -168,18 +202,25 @@ public class Player : MonoBehaviour
 
                 case "Level4":
 
-                    PlayerPrefs.SetInt("Score", score);
-
-                    if (other.gameObject.tag != "Coin")
+                    if (itemScore == 50)
                     {
-                        score++;
-                    }
+                        lose = true;
+                        panel.SetActive(lose);
 
-                    if (score % 20 == 0)
+                        PlayerPrefs.SetInt("Score", score + 1000);
+                    }
+                    else
                     {
-                        FallDown.falls += 0.5f;
-                    }
+                        if (other.gameObject.tag != "Coin")
+                        {
+                            itemScore++;
+                        }
 
+                        if (itemScore % 5 == 0)
+                        {
+                            FallDown.falls += 0.5f;
+                        }
+                    }
                     break;
             }
 
