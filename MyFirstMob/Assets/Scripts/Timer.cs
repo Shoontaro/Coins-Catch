@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerText.text = timeStart.ToString();
+        timeStart = 45f;
     }
 
     void Update()
@@ -17,6 +18,7 @@ public class Timer : MonoBehaviour
         {
             timeStart -= Time.deltaTime;
             timerText.text = Mathf.Round(timeStart).ToString();
+
         }
     }
 }
