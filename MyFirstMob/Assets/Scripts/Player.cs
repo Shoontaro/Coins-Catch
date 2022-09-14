@@ -92,8 +92,8 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Brick" || other.gameObject.tag == "Machette" || other.gameObject.tag == "Sword" || other.gameObject.tag == "Bomb")
         {
-
-            switch (other.gameObject.tag) {
+            switch (other.gameObject.tag)
+            {
                 case "Brick":
                     soundBrick.Play();
                     break;
@@ -106,9 +106,8 @@ public class Player : MonoBehaviour
                 case "Bomb":
                     soundBomb.Play();
                     break;
-               
             }
-            
+
             i++;
 
             FallDown.falls = 0f;
@@ -120,18 +119,12 @@ public class Player : MonoBehaviour
                 heart3.SetActive(lose);
                 lose = true;
                 FallDown.falls = 0;
-                // restart.SetActive(lose);
-                // exit.SetActive(lose);
                 panel.SetActive(lose);
-
-                //ex.SetActive(lose);
             }
         }
 
         if (elem.IndexOf(other.gameObject.tag) != -1)
         {
-           
-
             switch (other.gameObject.tag)
             {
                 case "Coin":
@@ -189,7 +182,6 @@ public class Player : MonoBehaviour
                     break;
 
                 case "Level3":
-
                     break;
 
                 case "Level4":

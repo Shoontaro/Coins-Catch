@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     public GameObject purchasePanel2;
     public GameObject purchasePanel3;
     public GameObject purchasePanel4;
+    public GameObject optionsPanel;
 
     public GameObject button2Copy;
     public GameObject button3Copy;
@@ -31,6 +32,7 @@ public class MainMenu : MonoBehaviour
     public Text textScore3;
     public Text textScore4;
 
+    public Button level1;
     public Button level2;
     public Button level3;
     public Button level4;
@@ -90,22 +92,17 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
-        //if (Player.score >= 5)
-        //{
-        //    levelComplete = 2;
-        //    PlayerPrefs.SetInt("LevelComplete", levelComplete);
-        //}
-
     }
 
     public void SetActivePurchasePanel2()
     {
         Debug.Log(levelComplete);
 
+        ButtonPressed();
         purchasePanel2.SetActive(true);
         textScore2.text = $"{money}/300";
 
-        if (money < 300 ) //300
+        if (money < 3) //300
         {
             buy2.interactable = false;
             noMoney2.SetActive(true);
@@ -113,10 +110,11 @@ public class MainMenu : MonoBehaviour
     }
     public void SetActivePurchasePanel3()
     {
+        ButtonPressed();
         purchasePanel3.SetActive(true);
         textScore3.text = $"{money}/1000";
 
-        if (money < 1000 || levelComplete<2) //1000
+        if (money < 1 || levelComplete < 2) //1000
         {
             buy3.interactable = false;
             noMoney3.SetActive(true);
@@ -125,10 +123,11 @@ public class MainMenu : MonoBehaviour
 
     public void SetActivePurchasePanel4()
     {
+        ButtonPressed();
         purchasePanel4.SetActive(true);
         textScore4.text = $"{money}/10000";
 
-        if (money < 10000 || levelComplete < 3) //10000
+        if (money < 10 || levelComplete < 3) //10000
         {
             buy4.interactable = false;
             noMoney4.SetActive(true);
@@ -137,6 +136,7 @@ public class MainMenu : MonoBehaviour
 
     public void PressBuy2()
     {
+        ButtonPressed();
         Destroy(button2Copy);
         level2.interactable = true;
         levelComplete = 2;
@@ -146,6 +146,7 @@ public class MainMenu : MonoBehaviour
 
     public void PressBuy3()
     {
+        ButtonPressed();
         Destroy(button3Copy);
         level3.interactable = true;
         levelComplete = 3;
@@ -155,6 +156,7 @@ public class MainMenu : MonoBehaviour
 
     public void PressBuy4()
     {
+        ButtonPressed();
         Destroy(button4Copy);
         level4.interactable = true;
         levelComplete = 4;
@@ -164,6 +166,7 @@ public class MainMenu : MonoBehaviour
 
     public void MakePurchase(int needMoney)
     {
+        ButtonPressed();
         money -= needMoney;
         PlayerPrefs.SetInt("Money", money);
         moneyTextmoney.text = money.ToString();
@@ -171,37 +174,13 @@ public class MainMenu : MonoBehaviour
 
     public void Level1Pressed()
     {
-        buttonPressed.Play();
+        ButtonPressed();
         SceneManager.LoadScene("Level1");
     }
 
-    //public void Level2Pressed()
-    //{
-    //    buttonPressed.Play();
-    //    SceneManager.LoadScene("Level2");
-    //}
-
-    //public void Level3Pressed()
-    //{
-    //    buttonPressed.Play();
-    //    SceneManager.LoadScene("Level3");
-    //}
-
-    //public void Level4Pressed()
-    //{
-    //    buttonPressed.Play();
-    //    SceneManager.LoadScene("Level4");
-    //}
-
-    //public void Level5Pressed()
-    //{
-    //    buttonPressed.Play();
-    //    SceneManager.LoadScene("Level5");
-    //}
-
     public void ExitPressed()
     {
-        buttonPressed.Play();
+        ButtonPressed();
         Application.Quit();
     }
 
@@ -221,7 +200,23 @@ public class MainMenu : MonoBehaviour
 
     public void LoadTo(int level)
     {
-        buttonPressed.Play();
+        ButtonPressed();
         SceneManager.LoadScene(level);
+    }
+
+    public void IsActiveOptionsPanel()
+    {
+        level1.interactable = false;
+        level2.interactable = false;
+        level3.interactable = false;
+        level4.interactable = false;
+    }
+
+    public void NotActiveOptionsPanel()
+    {
+        level1.interactable = true;
+        level2.interactable = true;
+        level3.interactable = true;
+        level4.interactable = true;
     }
 }
