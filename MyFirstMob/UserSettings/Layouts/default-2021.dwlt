@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: H:\unity\!study\! cooperative projects\Coin Catch\Coins-Catch\MyFirstMob
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8620000
-    m_LastClickedID: 25336
-    m_ExpandedIDs: 00000000e4620000f862000000ca9a3b
+    m_SelectedIDs: 62610000
+    m_LastClickedID: 24930
+    m_ExpandedIDs: 000000003061000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4620000
+    m_ExpandedIDs: 0000000030610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3a190000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 52b5ffffbebaffff82bcffff94faffffb2faffff246000004a6000007260000082600000c0600000d2600000dc600000fc6000007e61000050de000058de000060de00005cdf000064df00006cdf00005ce6000064e60000
+      m_ExpandedIDs: 6ed8ffffb8f2ffff0afaffff28fbffffb6610000c0610000ca6100002a62000034620000526200005e620000d6620000e0620000ee650000fe650000066600001466000040660000b2820000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.61409163, y: 0.35997236, z: 62.278625}
+    m_Target: {x: -0.6278295, y: -0.88690925, z: 69.58223}
     speed: 2
-    m_Value: {x: -0.61409163, y: 0.35997236, z: 62.278625}
+    m_Value: {x: -0.54154354, y: -0.84721774, z: 67.16783}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -814,9 +814,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.2337832
+    m_Target: 7.0665655
     speed: 2
-    m_Value: 6.2337832
+    m_Value: 6.762264
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -932,7 +932,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
