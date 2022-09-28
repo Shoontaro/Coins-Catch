@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using Spine.Unity;
 
 public class Player : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
     public string labelTextLevel3 = "You earned 300 coins";
     public static List<string> elem = new List<string>() { "Coin", "Target", "bottle", "rope", "book", "bandage" };
 
+
     void Awake()
     {
         lose = false;
@@ -37,6 +39,8 @@ public class Player : MonoBehaviour
         scoreTarget = 0;
         bookscore = 0;
         countLvl4 = 0;
+
+        SkeletonAnimation.timeScaleCopy = 1;
     }
 
     void Update()
@@ -161,10 +165,10 @@ public class Player : MonoBehaviour
                         FallDown.falls += 0.5f;
                     }
 
-                    if (score == 300)
-                    {
+                    //if (score == 300)
+                    //{
 
-                    }
+                    //}
 
                     break;
 
@@ -203,6 +207,8 @@ public class Player : MonoBehaviour
                         if (itemScore % 5 == 0)
                         {
                             FallDown.falls += 0.5f;
+                            SkeletonAnimation.timeScaleCopy += 1;
+
                         }
                     }
                     break;

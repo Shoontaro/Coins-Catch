@@ -1,0 +1,48 @@
+
+bag.png
+size: 340,518
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: true
+  xy: 2, 133
+  size: 383, 330
+  orig: 383, 330
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 40
+  size: 196, 91
+  orig: 196, 91
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: true
+  xy: 200, 67
+  size: 64, 101
+  orig: 64, 101
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: true
+  xy: 200, 2
+  size: 63, 94
+  orig: 63, 94
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: true
+  xy: 2, 5
+  size: 33, 126
+  orig: 33, 126
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 303, 2
+  size: 35, 129
+  orig: 35, 129
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+bronze_coin.png
+size: 336,324
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 2
+  size: 285, 320
+  orig: 285, 320
+  offset: 0, 0
+  index: -1
+Rectangle 1
+  rotate: false
+  xy: 289, 3
+  size: 45, 319
+  orig: 45, 319
+  offset: 0, 0
+  index: -1

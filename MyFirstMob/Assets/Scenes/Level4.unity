@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 8230921396141158678, guid: 884cc30e73113b04cbfc6f6997ce3937, type: 3}
+  coin: {fileID: 2047912734188298857, guid: 210dc16eb4cd59b4e814eda7a16be2c7, type: 3}
   time: 4
 --- !u!114 &951676543
 MonoBehaviour:
@@ -2335,6 +2335,9 @@ MonoBehaviour:
   soundBag: {fileID: 1363361842}
   soundGlas: {fileID: 443724863}
   soundBook: {fileID: 0}
+  soundMachette: {fileID: 0}
+  soundSword: {fileID: 0}
+  soundBomb: {fileID: 0}
   heart1: {fileID: 1159631225}
   heart2: {fileID: 537959676}
   heart3: {fileID: 2091463998}
