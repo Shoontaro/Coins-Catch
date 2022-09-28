@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "1IVyiDiNd5TQH3eC7KDB/HubLEk",
+	"spine": "3.8.75",
+	"x": -191,
+	"y": -114,
+	"width": 383,
+	"height": 228,
+	"images": "./for girls/img/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": 1 }
+],
+"slots": [
+	{ "name": "brick", "bone": "bone", "attachment": "brick" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"brick": {
+				"brick": { "x": -0.5, "width": 383, "height": 228 }
+			}
+		}
+	}
+],
+"animations": {
+	"brick_rotation": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": -1.08 },
+					{ "time": 0.5 },
+					{ "time": 0.8333, "angle": 2.5 },
+					{ "time": 1.1667 }
+				]
+			}
+		}
+	}
+}
+}
