@@ -13,7 +13,7 @@ public class DialogManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialog(Dialog dialog)
+    public void StartDialog(Dialogue dialog)
     {
         Debug.Log("start dialogue");
         sentences.Clear();
