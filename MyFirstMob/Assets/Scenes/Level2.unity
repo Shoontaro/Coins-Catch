@@ -1953,9 +1953,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 2.9
-  start: -2
-  end: 2
-  bomb: {fileID: 343771192693363980, guid: 307495e51dc74b74089d863ee6ff2f53, type: 3}
+  start: -0.9
+  end: 3.5
+  bomb: {fileID: 2012098630229446647, guid: 2f2de8fab6e69774bb5264bf4b83b04e, type: 3}
 --- !u!114 &951676542
 MonoBehaviour:
   m_ObjectHideFlags: 0

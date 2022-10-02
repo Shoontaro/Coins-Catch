@@ -668,7 +668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7385416149364158402, guid: f15dbc9f81062204984bd24d1c7a4773, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7385416149364158402, guid: f15dbc9f81062204984bd24d1c7a4773, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1523,9 +1523,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 2.9
-  start: -2
-  end: 2
-  bomb: {fileID: 343771192693363980, guid: 307495e51dc74b74089d863ee6ff2f53, type: 3}
+  start: -0.9
+  end: 3.5
+  bomb: {fileID: 2012098630229446647, guid: 2f2de8fab6e69774bb5264bf4b83b04e, type: 3}
 --- !u!1 &1108149091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7385416149364158402, guid: f15dbc9f81062204984bd24d1c7a4773, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7385416149364158402, guid: f15dbc9f81062204984bd24d1c7a4773, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1982,7 +1982,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.024143338, y: 0.33800465}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1993,7 +1993,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4, y: 4}
+  m_Size: {x: 2.8688495, y: 3.3239908}
   m_EdgeRadius: 0
 --- !u!50 &1279866415
 Rigidbody2D:
