@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 1395,335
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images_potion_1/blick_bottom
+  rotate: false
+  xy: 2, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/blick_middle
+  rotate: false
+  xy: 201, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/blick_top
+  rotate: false
+  xy: 400, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/cork
+  rotate: false
+  xy: 599, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/cup_top
+  rotate: false
+  xy: 798, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/glass_cup
+  rotate: false
+  xy: 997, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
+images_potion_1/liquid
+  rotate: false
+  xy: 1196, 2
+  size: 197, 331
+  orig: 197, 331
+  offset: 0, 0
+  index: -1
