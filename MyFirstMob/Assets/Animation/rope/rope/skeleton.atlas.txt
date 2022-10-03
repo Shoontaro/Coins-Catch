@@ -1,0 +1,20 @@
+
+skeleton.png
+size: 422,268
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rope_base
+  rotate: true
+  xy: 2, 2
+  size: 264, 334
+  orig: 264, 334
+  offset: 0, 0
+  index: -1
+rope_end
+  rotate: true
+  xy: 338, 139
+  size: 127, 82
+  orig: 127, 82
+  offset: 0, 0
+  index: -1

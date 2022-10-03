@@ -1,0 +1,20 @@
+
+skeleton.png
+size: 400,301
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 333, 97
+  size: 65, 202
+  orig: 65, 202
+  offset: 0, 0
+  index: -1
+sword
+  rotate: true
+  xy: 2, 2
+  size: 297, 329
+  orig: 297, 329
+  offset: 0, 0
+  index: -1
