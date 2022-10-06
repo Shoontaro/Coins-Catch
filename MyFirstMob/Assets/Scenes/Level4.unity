@@ -1654,7 +1654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 343771192693363980, guid: 15a8862fc9b1b6445b65870c9b3a4b2d, type: 3}
+  coin: {fileID: 8059623361081467203, guid: 80b45abd479804948a2da2413fb94a6d, type: 3}
   time: 2
 --- !u!114 &951676544
 MonoBehaviour:
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 8698961971447622578, guid: 425f2b9c450e103459141fa6e89bc900, type: 3}
+  coin: {fileID: 3652446925490247591, guid: 0d528dd944c9a8b46ada4ba8b9d92f49, type: 3}
   time: 3.6
 --- !u!114 &951676545
 MonoBehaviour:
@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 3116671776903848415, guid: c366dc67c3ae94a439fd7507a8e9df91, type: 3}
+  coin: {fileID: 4125270373009233174, guid: 1c6560ab39682a04080a59b99d3e23c2, type: 3}
   time: 2.8
 --- !u!114 &951676546
 MonoBehaviour:
