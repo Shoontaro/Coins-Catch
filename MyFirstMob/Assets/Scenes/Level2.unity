@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 343771192693363980, guid: 01efea6f6335ee642a5dbc8bdb6465c3, type: 3}
+  coin: {fileID: 5444603886404565723, guid: d6d65481620de2f4dab0f3c556890074, type: 3}
   time: 1.5
 --- !u!114 &951676541
 MonoBehaviour:
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f524d79966cc3d946b635dc9231feda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 343771192693363980, guid: ab96ad1e28815974393ff7e8b6121ab9, type: 3}
+  coin: {fileID: 898930298316140994, guid: 351157d56f0daf742acb844d01995875, type: 3}
   time: 2
 --- !u!1 &1108149091
 GameObject:
