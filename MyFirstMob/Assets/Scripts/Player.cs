@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
 {
     public static bool lose = false;
     public GameObject panel;
+    public GameObject canvasGO;
+    public GameObject imageGO;
+    public GameObject panelGameOver;
     public GameObject panelWin;
     public AudioSource soundCoin;
     public AudioSource soundBrick;
@@ -62,8 +65,8 @@ public class Player : MonoBehaviour
     private void OnGUI()
     {
         GUIStyle myStyle = new GUIStyle(GUI.skin.GetStyle("label"));
-        myStyle.fontSize = 110;
-        myStyle.normal.textColor = Color.red;
+        myStyle.fontSize = 90;
+        myStyle.normal.textColor = Color.green;
         myStyle.alignment = TextAnchor.MiddleCenter;
 
         if (SceneManager.GetActiveScene().name == "Level2" && panel.activeSelf && lose == true)
@@ -190,13 +193,16 @@ public class Player : MonoBehaviour
 
                 case "Level4":
 
-                    if (itemScore == 50)
+                    if (itemScore == 10)
                     {
                         lose = true;
                         panel.SetActive(lose);
                         FallDown.falls = 0;
                         PlayerPrefs.SetInt("Score", score + 1000);
-                    }
+                        panelGameOver.SetActive(true);
+                        canvasGO.SetActive(false);
+                        imageGO.SetActive(false);
+}
                     else
                     {
                         if (other.gameObject.tag != "Coin")
