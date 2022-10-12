@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1227,8 +1227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.8, y: -1546.8}
-  m_SizeDelta: {x: 587.6, y: 190}
+  m_AnchoredPosition: {x: 56, y: -1495.4}
+  m_SizeDelta: {x: 709.6, y: 305.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247830066
 MonoBehaviour:
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9716981, g: 0.93961376, b: 0.93961376, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1252,7 +1252,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 120
+    m_FontSize: 150
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.5176471, g: 0.12941177, b: 0.0627451, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1664,7 +1664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0435\u0449\u0435!"
+  m_Text: Earn more
 --- !u!222 &467940611
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2738,9 +2738,25 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+      objectReference: {fileID: 12800000, guid: e51b15c589493164789f65e09b8849e5, type: 3}
+    - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 120
@@ -2755,10 +2771,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6040310886269899397, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6440335003562422226, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
@@ -4571,33 +4591,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C!"
+      value: Today was beautiful. Enthusiastically heading to the next assignment
+        from a citizen, you meet an old man you don't know sitting in the shade of
+        a tree.
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: "\u0412\u044B \u043C\u043E\u043B\u043E\u0434\u043E\u0439 \u0433\u043E\u0440\u043E\u0436\u0430\u043D\u0438\u043D
-        \u042D\u043B\u0434\u0435\u0440\u043C\u043E\u0440\u0430, \u0436\u0438\u0432\u0443\u0449\u0438\u0439
-        \u043D\u0430 \u0434\u0435\u043D\u044C\u0433\u0438 \u0441 \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0445
-        \u043F\u043E\u0440\u0443\u0447\u0435\u043D\u0438\u0439, \u043C\u0435\u0447\u0442\u0430\u044E\u0449\u0438\u0439
-        \u043E\u0434\u043D\u0430\u0436\u0434\u044B \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C
-        \u0432 \u0441\u0442\u0435\u043D\u0430\u0445 \u0434\u0432\u043E\u0440\u0446\u0430."
+      value: "\u2014 An inner feeling told me that I would see you. Yes, I had a
+        premonition of you today! You've grown so much since we last met. However,
+        your journey is just beginning."
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: "\u0412\u0430\u0448\u0430 \u0446\u0435\u043B\u044C - \u0441\u0442\u0430\u0442\u044C
-        \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u043E\u043C \u0440\u044B\u0446\u0430\u0440\u044F!"
+      value: 'To achieve your main goal, you need to go through a path filled with
+        trials. But don''t worry, my friend. I will help and guide you in difficult
+        moments. Now, remember. Not everything can be measured in gold.
+
+
+        With
+        a pat on the shoulder, the stranger disappeared.'
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: "\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430 \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u044F
-        \u043A \u0441\u0432\u043E\u0435\u0439 \u0446\u0435\u043B\u0438 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B
-        \u0434\u0435\u043D\u044C\u0433\u0438. \u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439\u0442\u0435
-        \u0437\u043E\u043B\u043E\u0442\u043E \u0437\u0430 \u043F\u043E\u0440\u0443\u0447\u0435\u043D\u0438\u044F
-        \u0432 \u0433\u043E\u0440\u043E\u0434\u0435!"
+      value: 'To achieve your main goal, you need to go through a path filled with
+        trials. But don''t worry, my friend. I will help and guide you in difficult
+        moments. Now, remember. Not everything can be measured in gold.
+
+
+        With
+        a pat on the shoulder, the stranger disappeared.'
       objectReference: {fileID: 0}
     - target: {fileID: 7817953726554341254, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
       propertyPath: dialog.sentences.Array.data[4]
@@ -4764,7 +4790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4980,7 +5006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5416,7 +5442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.5176471, g: 0.12941177, b: 0.0627451, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5436,7 +5462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0435\u0449\u0435!"
+  m_Text: Earn more
 --- !u!222 &2138842161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5480,6 +5506,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 10709035736661831, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Text
+      value: Are you ready?
+      objectReference: {fileID: 0}
     - target: {fileID: 10709036404202545, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -5516,6 +5546,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 10709036784533273, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Text
+      value: Earn more
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709036784533273, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.061187245
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709036784533273, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.12858361
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709036784533273, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5188679
+      objectReference: {fileID: 0}
     - target: {fileID: 10709036784533275, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
       propertyPath: m_Name
       value: NoMoneyText2
@@ -5523,6 +5569,18 @@ PrefabInstance:
     - target: {fileID: 10709036784533275, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709037035591312, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.35686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709037035591312, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.47058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 10709037035591312, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5764706
       objectReference: {fileID: 0}
     - target: {fileID: 10709037035591314, guid: a8fc8964c80bea74bb3eec5c08c509e5, type: 3}
       propertyPath: m_Name
@@ -5787,6 +5845,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PurchasePanel4
       objectReference: {fileID: 0}
+    - target: {fileID: 4113596312232080627, guid: b729f48b4b5fdfe4f839846f153ddf90, type: 3}
+      propertyPath: m_Color.b
+      value: 0.35686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113596312232080627, guid: b729f48b4b5fdfe4f839846f153ddf90, type: 3}
+      propertyPath: m_Color.g
+      value: 0.47058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113596312232080627, guid: b729f48b4b5fdfe4f839846f153ddf90, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113596312479232349, guid: b729f48b4b5fdfe4f839846f153ddf90, type: 3}
+      propertyPath: m_Text
+      value: Are you ready?
+      objectReference: {fileID: 0}
     - target: {fileID: 4113596313460776985, guid: b729f48b4b5fdfe4f839846f153ddf90, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6033,6 +6107,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8447498311869581443, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3555981
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447498311869581443, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.46696264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447498311869581443, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5754717
+      objectReference: {fileID: 0}
     - target: {fileID: 8447498311869581444, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
       propertyPath: m_Name
       value: PurchasePanel3
@@ -6148,6 +6234,10 @@ PrefabInstance:
     - target: {fileID: 8447498312344049188, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447498312599145619, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
+      propertyPath: m_Text
+      value: Are you ready?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b695ac279ff787478b12e6a36b8e49f, type: 3}
