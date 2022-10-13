@@ -6,6 +6,7 @@ using Spine.Unity;
 public class Player : MonoBehaviour
 {
     public static bool lose = false;
+    public Font fontUI;
     public GameObject panel;
     public GameObject canvasGO;
     public GameObject imageGO;
@@ -64,19 +65,21 @@ public class Player : MonoBehaviour
 
     private void OnGUI()
     {
+       // Color newColor = new Color(25, 112, 35, 1);
         GUIStyle myStyle = new GUIStyle(GUI.skin.GetStyle("label"));
-        myStyle.fontSize = 90;
-        myStyle.normal.textColor = Color.green;
+        myStyle.fontSize = 65;
+        myStyle.normal.textColor = Color.white;
         myStyle.alignment = TextAnchor.MiddleCenter;
+        myStyle.font = fontUI;
 
         if (SceneManager.GetActiveScene().name == "Level2" && panel.activeSelf && lose == true)
         {
-            GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel2, myStyle);
+            GUI.Label(new Rect(Screen.width /7, Screen.height /4, 800, 700), labelTextLevel2, myStyle);
         }
 
         if (SceneManager.GetActiveScene().name == "Level3" && panel.activeSelf && Timer.timeStart < 1f)
         {
-            GUI.Label(new Rect(Screen.width / 4, Screen.height / 3, 600, 600), labelTextLevel3, myStyle);
+            GUI.Label(new Rect(Screen.width / 7, Screen.height / 4, 800, 700), labelTextLevel3, myStyle);
         }
     }
 
@@ -177,7 +180,7 @@ public class Player : MonoBehaviour
 
                 case "Level2":
 
-                    if (bookscore >= 5 && scoreTarget == 8)
+                    if (bookscore >= 5 && scoreTarget == 8) // 5 - 8
                     {
                         // Time.timeScale = 0f; 
                         lose = true;
@@ -193,7 +196,7 @@ public class Player : MonoBehaviour
 
                 case "Level4":
 
-                    if (itemScore == 10)
+                    if (itemScore == 10) //50
                     {
                         lose = true;
                         panel.SetActive(lose);

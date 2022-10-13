@@ -2279,6 +2279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1614358863}
+  canvasGO: {fileID: 0}
+  imageGO: {fileID: 0}
+  panelGameOver: {fileID: 0}
   panelWin: {fileID: 0}
   soundCoin: {fileID: 744274247}
   soundBrick: {fileID: 816743343}
@@ -2688,7 +2691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4528302, g: 0.23670933, b: 0.11747954, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2696,7 +2699,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_Font: {fileID: 12800000, guid: f864b70b7b19f2445af723992500e500, type: 3}
     m_FontSize: 190
     m_FontStyle: 1
     m_BestFit: 1
