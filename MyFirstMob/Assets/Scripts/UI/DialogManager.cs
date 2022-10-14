@@ -7,6 +7,7 @@ public class DialogManager : MonoBehaviour
 {
     private Queue<string> sentences;
     public Text dialogText;
+    public Button continueButton;
 
     void Start()
     {
@@ -30,12 +31,14 @@ public class DialogManager : MonoBehaviour
         if (sentences.Count == 0) 
         {
             EndDialog();
+            continueButton.interactable = false;
             return;
         }
 
         string sentence = sentences.Dequeue();
         dialogText.text = sentence;
     }
+
 
     void EndDialog()
     {
