@@ -821,6 +821,10 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 1441770006}
+    - target: {fileID: 6374334062728771160, guid: 6c1088ffbacb09447a2c28da20e3f779, type: 3}
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 1176720290}
     - target: {fileID: 6374334062728771161, guid: 6c1088ffbacb09447a2c28da20e3f779, type: 3}
       propertyPath: m_Name
       value: DialogManager
@@ -2818,7 +2822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2287240977677318098, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1043.1
+      value: 932.9
       objectReference: {fileID: 0}
     - target: {fileID: 2287240977677318098, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2826,7 +2830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2287240977677318098, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 315
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 2287240977677318098, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2895,6 +2899,12 @@ PrefabInstance:
     - target: {fileID: 4893424574246146619, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_Color.r
       value: 0.6132076
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402719126579171480, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+      propertyPath: m_text
+      value: 'Continue
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5402719126579171480, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_fontSize
@@ -3046,7 +3056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8035855739996557162, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8433243663111866206, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
       propertyPath: m_Name
@@ -3699,6 +3709,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7817953726554341249, guid: 82543b84405c3ff4baa8e98b38db7cc2, type: 3}
   m_PrefabInstance: {fileID: 1617434658}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1176720290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1129365686455762280, guid: e1179ccf635957240b72c30f54908e6b, type: 3}
+  m_PrefabInstance: {fileID: 776493300}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266365674
 GameObject:
   m_ObjectHideFlags: 0
