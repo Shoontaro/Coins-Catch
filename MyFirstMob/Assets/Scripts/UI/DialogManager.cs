@@ -19,7 +19,7 @@ public class DialogManager : MonoBehaviour
         Debug.Log("start dialogue");
         sentences.Clear();
 
-        foreach(string sentence in dialog.sentences)
+        foreach (string sentence in dialog.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -28,11 +28,15 @@ public class DialogManager : MonoBehaviour
     }
     public void DisplayNextsentence()
     {
-        if (sentences.Count == 0) 
+        if (sentences.Count == 0)
         {
             EndDialog();
-            continueButton.interactable = false;
             return;
+        }
+
+        if (sentences.Count == 1)
+        {
+            continueButton.interactable = false;
         }
 
         string sentence = sentences.Dequeue();
