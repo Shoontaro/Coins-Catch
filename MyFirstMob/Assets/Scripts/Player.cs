@@ -180,7 +180,7 @@ public class Player : MonoBehaviour
 
                 case "Level2":
 
-                    if (bookscore >= 5 && scoreTarget == 8) // 5 - 8
+                    if (bookscore >= 20 && scoreTarget == 10) // 5 - 8
                     {
                         // Time.timeScale = 0f; 
                         lose = true;

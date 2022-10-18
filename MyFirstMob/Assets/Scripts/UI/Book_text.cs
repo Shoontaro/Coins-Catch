@@ -15,7 +15,7 @@ public class Book_text : MonoBehaviour
         }
         else
         {
-            MyText.text = $"X 0/5";
+            MyText.text = $"X 0/20";
             MyText.color = new Color(255, 255, 255);
         }
     }
@@ -32,9 +32,9 @@ public class Book_text : MonoBehaviour
         }
         else
         {
-            MyText.text = $"X {Player.bookscore}/5";
+            MyText.text = $"X {Player.bookscore}/20";
 
-            if (Player.bookscore == 5)
+            if (Player.bookscore == 20)
             {
                 MyText.color = new Color(0, 255, 0);
             }
