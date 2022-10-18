@@ -13,8 +13,10 @@ public class TextTarget : MonoBehaviour
 
     public void Update()
     {
-        MyTextTarget.text = $"X {Player.scoreTarget}/8";
-        if (Player.scoreTarget == 8) {
+        MyTextTarget.text = $"X {Player.scoreTarget}/10";
+
+        if (Player.scoreTarget == 10)
+        {
             MyTextTarget.color = new Color(0, 255, 0);
         }
     }
