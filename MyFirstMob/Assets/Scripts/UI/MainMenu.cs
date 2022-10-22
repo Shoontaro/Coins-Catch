@@ -102,7 +102,7 @@ public class MainMenu : MonoBehaviour
         purchasePanel2.SetActive(true);
         textScore2.text = $"{money}/300";
 
-        if (money < 3) //300
+        if (money < 300) //300
         {
             buy2.interactable = false;
             noMoney2.SetActive(true);
@@ -114,7 +114,7 @@ public class MainMenu : MonoBehaviour
         purchasePanel3.SetActive(true);
         textScore3.text = $"{money}/1000";
 
-        if (money < 1 || levelComplete < 2) //1000
+        if (money < 1000 || levelComplete < 2) //1000
         {
             buy3.interactable = false;
             noMoney3.SetActive(true);
@@ -127,7 +127,7 @@ public class MainMenu : MonoBehaviour
         purchasePanel4.SetActive(true);
         textScore4.text = $"{money}/10000";
 
-        if (money < 10 || levelComplete < 3) //10000
+        if (money < 10000 || levelComplete < 3) //10000
         {
             buy4.interactable = false;
             noMoney4.SetActive(true);

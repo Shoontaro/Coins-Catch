@@ -143,12 +143,12 @@ public class Player : MonoBehaviour
                     break;
                 case "Target":
                     soundWind.Play();
-                    if (scoreTarget < 8)
+                    if (scoreTarget < 10)
                         scoreTarget++;
                     break;
                 case "book":
                     soundBook.Play();
-                    if (bookscore < 5)
+                    if (bookscore < 20)
                         bookscore++;
                     break;
                 case "bottle":
@@ -196,7 +196,7 @@ public class Player : MonoBehaviour
 
                 case "Level4":
 
-                    if (itemScore == 10) //50
+                    if (itemScore == 50) //50
                     {
                         lose = true;
                         panel.SetActive(lose);
