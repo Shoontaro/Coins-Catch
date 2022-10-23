@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 101
+  controlID: 103
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 102
+  controlID: 104
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,21 +399,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/UI
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: H:\unity\!study\! cooperative projects\Coin Catch\Coins-Catch\MyFirstMob
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 201}
-    m_SelectedIDs: 7a650000
-    m_LastClickedID: 25978
+    scrollPos: {x: 0, y: 203}
+    m_SelectedIDs: 78650000
+    m_LastClickedID: 25976
     m_ExpandedIDs: 00000000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c6500004e650000506500005265000054650000566500005865000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5a84ffff9684ffff7a87ffffa887ffffda87ffff1488ffff1e89ffffbe93fffff893ffff5a95ffff8695ffffb295ffffde95ffffe896ffffba98fffff498ffff569affff829affffae9affffda9affffe49bffff649dffff9e9dffff009fffff2c9fffff589fffff849fffff8ea0ffffcea1ffff08a2ffff6aa3ffff96a3ffffc2a3ffffeea3fffff8a4ffff0aa7ffff52a7ffffb4a8ffffe0a8ffff0ca9ffff38a9ffff42aaffffc6abffff0eacffff70adffff9cadffffc8adfffff4adfffffeaeffff76b0ffffbeb0ffff20b2ffff4cb2ffff78b2ffffa4b2ffffaeb3ffff3ab5ffff82b5ffff5eb8ffff8cb8ffffbeb8fffff8b8ffff02baffffa0cdffffe8cdffffd0d0ffff02d1ffff38d1ffff76d1ffff84d2ffff40d6ffff3cf7ffff28fbffff50620000e8620000b2820000ba820000ca820000d08200000afb000080fc000066fd0000
+      m_ExpandedIDs: 3ae2feff26e5fefff4e6feff2ce7feff14eafeff46eafeff7ceafeffbaeafeffc8ebfeff4eeefeff94fcfeff7efefeff8604ffff460bffffc813ffff9c1affff081dffff7425ffff8c29ffff2253ffff9273ffff0877ffff368cffffac92ffffbc93ffff0494ffffec96ffff1e97ffff5097ffff8297ffffa098ffff90a0fffffea0ffff72a1ffffcea5ffff1aa6fffffea8ffff2ca9ffff5ea9ffff98a9ffffa2aaffff84adffff50f9ffff28fbffff8066000088660000986600009e660000d6660000aa8f0000b28f0000d88f000012900000ae9000004691000020cd0000defe0000ac0001001a05010026050100be050100cc1a0100e01a0100341f0100cc1f010044220100582201000e3a0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     x: 329
     y: 73
     width: 1021
-    height: 658
+    height: 660
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -843,9 +843,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.5278256, y: 1.6669914, z: -0.062920004}
+    m_Target: {x: -0.7132374, y: 0.012122754, z: -0.024610661}
     speed: 2
-    m_Value: {x: -2.5278256, y: 1.6669914, z: -0.062920004}
+    m_Value: {x: -0.7132374, y: 0.012122754, z: -0.024610661}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -896,9 +896,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.65376
+    m_Target: 6.6857452
     speed: 2
-    m_Value: 10.65376
+    m_Value: 6.6857452
   m_Ortho:
     m_Target: 1
     speed: 2

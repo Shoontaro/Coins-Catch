@@ -2601,7 +2601,7 @@ MonoBehaviour:
   heart1: {fileID: 1159631225}
   heart2: {fileID: 537959676}
   heart3: {fileID: 2091463998}
-  labelTextLevel2: You earned 300 coins
+  labelTextLevel2: You earned 100 coins
   labelTextLevel3: You earned 300 coins
 --- !u!1 &1435690501
 GameObject:
@@ -2691,7 +2691,7 @@ RectTransform:
   m_GameObject: {fileID: 1471878739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0012948872, y: 0.0012948867, z: 0}
+  m_LocalScale: {x: 0.001826992, y: 0.001838524, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1123459269}
@@ -2699,7 +2699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.95, y: -0.52}
+  m_AnchoredPosition: {x: 1.208, y: -0.474}
   m_SizeDelta: {x: 855.4512, y: 486.22217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1471878742
@@ -2724,18 +2724,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f864b70b7b19f2445af723992500e500, type: 3}
-    m_FontSize: 250
+    m_FontSize: 100
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 300
+    m_MaxSize: 250
     m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: 
 --- !u!222 &1471878743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2955,7 +2955,7 @@ RectTransform:
   m_GameObject: {fileID: 1754925179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.003884661, y: 0.0038846598, z: 0.0031077284}
+  m_LocalScale: {x: 0.0058269915, y: 0.005438524, z: 0.0031077284}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 826206070}
@@ -2963,7 +2963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 3.43, y: -0.33}
+  m_AnchoredPosition: {x: 4.458, y: -0.33}
   m_SizeDelta: {x: 855.4512, y: 486.22217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754925181
@@ -2988,18 +2988,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f864b70b7b19f2445af723992500e500, type: 3}
-    m_FontSize: 250
+    m_FontSize: 100
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 300
+    m_MaxSize: 250
     m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: 
 --- !u!222 &1754925182
 CanvasRenderer:
   m_ObjectHideFlags: 0
