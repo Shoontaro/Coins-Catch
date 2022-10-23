@@ -2301,7 +2301,7 @@ MonoBehaviour:
   heart2: {fileID: 537959676}
   heart3: {fileID: 2091463998}
   labelTextLevel2: You earned 300 coins
-  labelTextLevel3: You earned 300 coins
+  labelTextLevel3: You earned 500 coins
 --- !u!1 &1435690501
 GameObject:
   m_ObjectHideFlags: 0

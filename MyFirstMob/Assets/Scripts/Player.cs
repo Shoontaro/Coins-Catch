@@ -52,15 +52,25 @@ public class Player : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level4" && lose == true)
         {
             panel.SetActive(lose);
-            PlayerPrefs.SetInt("Score", 1000);
+            score += 1000;
+            PlayerPrefs.SetInt("Score", score);
         }
 
-        if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f)
+        if (SceneManager.GetActiveScene().name == "Level3" && Timer.timeStart < 1f && !lose)
         {
             lose = true;
             panel.SetActive(lose);
-            PlayerPrefs.SetInt("Score", 300);
+            score += 500;
+            PlayerPrefs.SetInt("Score", score);
         }
+
+        if (SceneManager.GetActiveScene().name == "Level2" && lose)
+        {
+            PlayerPrefs.SetInt("Score", score);
+        }
+
+
+        PlayerPrefs.SetInt("Score", score);
     }
 
     private void OnGUI()
@@ -143,12 +153,12 @@ public class Player : MonoBehaviour
                     break;
                 case "Target":
                     soundWind.Play();
-                    if (scoreTarget < 8)
+                    if (scoreTarget < 10)
                         scoreTarget++;
                     break;
                 case "book":
                     soundBook.Play();
-                    if (bookscore < 5)
+                    if (bookscore < 20)
                         bookscore++;
                     break;
                 case "bottle":
@@ -180,13 +190,14 @@ public class Player : MonoBehaviour
 
                 case "Level2":
 
-                    if (bookscore >= 20 && scoreTarget == 10) // 5 - 8
+                    if (bookscore == 20 && scoreTarget == 10) // 5 - 8
                     {
                         // Time.timeScale = 0f; 
                         lose = true;
                         panel.SetActive(lose);
+                        score += 100;
                         //panelWin.SetActive(lose);
-                        PlayerPrefs.SetInt("Score", 100);
+                  //      PlayerPrefs.SetInt("Score", score + 100);
                     }
 
                     break;
@@ -196,7 +207,7 @@ public class Player : MonoBehaviour
 
                 case "Level4":
 
-                    if (itemScore == 10) //50
+                    if (itemScore == 50) //50
                     {
                         lose = true;
                         panel.SetActive(lose);
